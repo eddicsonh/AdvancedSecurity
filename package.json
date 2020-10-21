@@ -1,0 +1,27 @@
+{
+  "name": "AdvancedSecurity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "css-loader": "^4.3.0",
+    "html-webpack-plugin": "^4.5.0",
+    "style-loader": "^1.2.1",
+    "webpack-cli": "^3.3.12",
+    "webpack": "^4.44.2"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.5.2",
+    "boxicons": "^2.0.5",
+    "file-loader": "^6.1.0",
+    "html-loader": "^1.3.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
