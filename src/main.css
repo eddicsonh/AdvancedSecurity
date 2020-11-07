@@ -26,12 +26,12 @@ body {
 
   header {
       height: 100vh;
-      background-image: linear-gradient(to top,  rgba(0, 106, 255, 0.1) 80%, rgba(0, 105, 255, 0.1) 80%), url(./img/PatternRandomized_blue.svg);
+      background-image: linear-gradient(to top,  rgba(0, 106, 255, 0.1) 80%, rgba(0, 105, 255, 0.1) 80%), url(./img/geometric_background.jpg);
       /* background-image: url(./img/SubtlePrism2.svg); */
       /* background-color: #0069ff; */
       background-repeat: no-repeat;
       background-size: cover;
-      background-attachment: fixed;
+      /* background-attachment: fixed; */
       background-position: center;
   }
 
@@ -79,7 +79,7 @@ body {
       right: 0;
       width: 20vw;
       height: 100%;
-    background-image: linear-gradient(to top, #0069ff 35%, #569cff 70%); 
+      background-image: linear-gradient(to top,#ffffff 35%, #ffffff 70%); 
       /* background-image: linear-gradient(to top,  rgba(0, 106, 255, 0.1) 80%, rgba(0, 105, 255, 0.1) 80%), url(./img/PatternRandomized_orange.svg); */
       display: flex;
       flex-direction: column;
@@ -98,10 +98,18 @@ body {
   }
 
   .menu-navegacion a{
-      color: #ffffff;
+      color: gray;
       text-decoration: none;
-      padding: 8px;
+      padding: 10px;
   }
+
+  .menu-navegacion a:hover{
+    background-color: #2775B9;
+    width: 100%;
+    text-align: center;
+    color: white;
+    /* padding: 8px; */
+}
 
   .company{
       box-shadow: 0 8px 16px rgba(10,10,10,.1);
@@ -137,6 +145,23 @@ body {
 
   /*NUESTROS SERVICIOS*/
 
+  .service-img img {
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .title-services{
+    font-weight: 500;
+    color: #ff9f00;
+    font-size: 20px;
+  }
+
+  .copy-services{
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+    } 
+
   .subtitulo{
       text-align: center;
       font-weight: 500;
@@ -146,20 +171,19 @@ body {
   }
 
   .contenedor-servicio{
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-wrap: wrap;
+    width: 90%;
+    max-width: 1300%;
+    overflow: hidden;
+    margin: auto;
+    padding:  60px 0;
+    /* height: 100vh; */
   }
 
-  .cheklist-servicios{
-    width: 45%;
-  }
-
-  .copy-services{
+  .ul-services{
     font-weight: 300;
-    font-size: 20px;
-    } 
+    font-size: 14px;
+    padding-left: 60px;
+  }
   /*EXPERTOS*/
 
   .contenedor-why {
@@ -225,11 +249,16 @@ body {
       font-weight: 400;
   }
 
+  /*NOSOTROS*/
+
+  .nosotros-img img {
+    width: 80%;
+    border-radius: 10px;
+    margin: 15px;
+  }
 
   .nosotros{
-    /* background-color: #2b2d6e !important; */
-    /* background-image: linear-gradient(to top,  rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 8) 100%), url(./img/CircuitPrimary.svg); */
-    background-size: cover;
+   background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -238,14 +267,6 @@ body {
     overflow: hidden;
     margin: auto;
     padding:  60px 0;
-    /* height: 100vh; */
-  }
-
-  .empresa{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
   }
 
    .contenedor-nosotros{
@@ -279,11 +300,10 @@ body {
 /*contato*/
 
 .contacto{
-    /* background-color: #2b2d6e !important; */
-    background-image: linear-gradient(to top,  rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 8) 100%), url(./img/CircuitPrimary_2.svg);
+    background-image: url(./img/Contact_cyberSecurity.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center;
     width: 100%;
     max-width: 1200%;
@@ -299,6 +319,7 @@ body {
     justify-content: space-evenly; */
     padding: 18px;
     font-size: 20px;
+    color: white;
 } 
 
 .contenedor-contacto{
