@@ -138,7 +138,8 @@ body {
 
   .copy{
       font-weight: 300;
-      font-size: 25px;
+      font-size: 20px;
+      text-align: center;
       /* color: #ff9f00; */
       text-shadow: 3px 0px 20px #343a40;
   }
