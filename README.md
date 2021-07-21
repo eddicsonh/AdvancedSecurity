@@ -1,21 +1,33 @@
 # AdvancedSecurity
 Web Page AdSecurity
+Version 1.1
 
 ## Desarrollo
-Se recomienda utilizar la herramienta gitpod para realizar cualquier modificacion, la misma probee de los componentes necesarios para la ejecucion del proyecto,
-accediendo al proyecto a travez de la siguiente url:
+Se recomienda utilizar la herramienta gitpod para realizar cualquier modificacion, la misma probee de los componentes necesarios para la ejecucion del proyecto y actualizacion del repositorio accediendo al proyecto a travez de la siguiente url:
 ~~~
 gitpod.io/#https://github.com/advancedSec/AdvancedSecurity
 ~~~
 
 ## Ejecutar proyecto
-Abrir una terminal de consola de gitpod o VS code y ejecutar el siguiente comando
+Abrir una terminal de consola de gitpod o VS code y ejecutar el siguiente comando para instalar las dependencias necesarias para el proyecto
 ~~~
 npm install
 ~~~
-Este comando instalara todos los paquetes necesarios del proyecto que se encuentran en el package.json
+Estructura de archivos a modificar para agregar/eliminar elementos a la web:
+```
+src
+  |--index.html
+  |--main.css
+  |--main.js
+  |--img
+```
+- **index.html:** Contenido html estatico de la web adsecurity
+- **main.css:** Contenido de estilos de adsecurity
+- **main.js:** Contenido dinamico de sitio adsecurity
+- **img** Carpeta que almacenas las imagenes
 
-  ### Recomendable
+
+  #### Recomendaciones
   Si quieres ver los cambios que realizas en el navegador, es recomendable tener la extension "Live Server" de visual studio code, e ir:
   ~~~
   dist/index.html
@@ -36,3 +48,13 @@ Una vez se realicen los cambios necesarios en los archivos, se compila con el co
 ~~~
 npx webpack -d
 ~~~
+El compilado se genera en la carpeta ``dist``
+
+## COMANDOS GIT
+Una vez realices las modificaciones es necesario actualizar(pushear) el repositorio para que de esta manera ``VERCEL`` pueda optener la actualización de la compilacion en la carpeta ``dist``
+
+- ``git status``: revisas las modificaciones dentro del repositorio
+- ``git add *``: añades al ``HEAD`` de git los cambios realizados
+- ``git commit -m "hacer un comentario respecto al cambio realizado, no importa lo largo que sea"``: realizar el commit de los cambios
+- ``git push origin main``: pushear los cambios a la rama main del proyecto y con esto ``VERCEL`` podra tomar el cambio de la carpeta ``dist``
+
