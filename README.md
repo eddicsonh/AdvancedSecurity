@@ -3,7 +3,7 @@ Web Page AdSecurity
 Version 1.1
 
 ## Desarrollo
-Se recomienda utilizar la herramienta gitpod para realizar cualquier modificacion, la misma probee de los componentes necesarios para la ejecucion del proyecto y actualizacion del repositorio accediendo al proyecto a travez de la siguiente url:
+Se recomienda utilizar la herramienta gitpod para realizar cualquier modificacion, la misma contiene los componentes necesarios para la ejecucion del proyecto y actualizacion del repositorio, accediendo al proyecto a travez de la siguiente url:
 ~~~
 gitpod.io/#https://github.com/advancedSec/AdvancedSecurity
 ~~~
@@ -51,7 +51,7 @@ npx webpack -d
 El compilado se genera en la carpeta ``dist``
 
 ## COMANDOS GIT
-Una vez realices las modificaciones es necesario actualizar(pushear) el repositorio para que de esta manera ``VERCEL`` pueda optener la actualización de la compilacion en la carpeta ``dist``
+Una vez realices las modificaciones es necesario actualizar(pushear) el repositorio para que de esta manera ``VERCEL`` pueda obtener la actualización de la compilacion en la carpeta ``dist``
 
 - ``git status``: revisas las modificaciones dentro del repositorio
 - ``git add *``: añades al ``HEAD`` de git los cambios realizados
